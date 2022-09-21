@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from concurrent.futures import thread
 from logic import banner, port_scan
 from os import system, name
