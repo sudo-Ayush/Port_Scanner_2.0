@@ -1,4 +1,4 @@
-threading
+thread6
 colorama
 pyfiglet
-socket
+sockets
