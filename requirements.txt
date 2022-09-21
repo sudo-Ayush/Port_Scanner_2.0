@@ -1,0 +1,4 @@
+threading
+colorama
+pyfiglet
+socket
