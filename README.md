@@ -29,5 +29,5 @@ sudo pip3 install -r requirements.txt
 
 sudo chmod +x port-scanner.py
 
-python3 logic.py
+python3 port-scanner.py
 ```
