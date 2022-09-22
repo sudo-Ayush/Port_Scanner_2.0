@@ -26,10 +26,11 @@ if name == 'nt':
 else:
     _ = system('clear')
 
-print(f"{Fore.YELLOW}[*] Enter IP Address...")
-print(f"{Fore.YELLOW}[*] Example = 192.168.1.1")
+print(f"{Fore.YELLOW}[*] Enter the domain name without <http> or <https> or simply enter IP Address...")
+print(f"{Fore.YELLOW}[*] Example = github.com or 20.207.73.82")
 print(f"{Fore.LIGHTCYAN_EX}--------------------------")
-ip = input(f"{Fore.BLUE}[*] Enter IP : ").strip()
+name = input(f"{Fore.BLUE}[*] Enter IP : ").strip()
+ip = socket.gethostbyname(name)
 
 if validation(ip) == True:
     rs = input(f"{Fore.BLUE}[*] Do you want to use defult ports scan[Y/N]: ").upper()
@@ -72,6 +73,7 @@ if validation(ip) == True:
     time.sleep(1)
     print(f"{Fore.LIGHTCYAN_EX}-------------------------"+ "-" * len(ip))
     print(f'{Fore.LIGHTMAGENTA_EX}[*] Finished | Scanned in {round(done,2)} seconds')
-    
+    exit()
+   
 else:
     print(f"{Fore.RED}[-] Invalid IP Address...!")
