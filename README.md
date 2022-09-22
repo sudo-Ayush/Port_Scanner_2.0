@@ -35,6 +35,7 @@ python3 port-scanner.py
 ## Usage | Parameters
 
 Simply enter a **valid IP Address** and press enter.
+
 **Example => 192.168.1.1**
 
 
