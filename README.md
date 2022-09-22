@@ -33,9 +33,9 @@ python3 port-scanner.py
 ```
 
 ## Usage | Parameters
-
-Enter the domain name without <http> or <https> or simply enter IP Address...<br>
-Example => github.com or 20.207.73.82
-
+```
+[*] Enter the domain name without <http> or <https> or simply enter IP Address...
+[*] Example = github.com or 20.207.73.82
+```
 
 ![POC](https://raw.githubusercontent.com/sudo-Ayush/Port_Scanner_2.0/main/image.PNG)
