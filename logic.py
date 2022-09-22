@@ -75,27 +75,31 @@ def port_scan(ip, port):
         print(f"{Fore.RED}[-] Error : Server is not responding...!")
         
 def validation(ip):
-        
-    ip = ip.split('.')
-    if len(ip) != 4:
-        return
-            
-    for i in ip:
-        if not isinstance(int(i), int):
+    try:    
+        ip = ip.split('.')
+        if len(ip) != 4:
             return
                 
-        if int(i) < 0 or int(i) > 255:
-            return
-            
-        if len(i) > 1:
-            if int(i[0]) == 0:
+        for i in ip:
+            if not isinstance(int(i), int):
+                return
+                    
+            if int(i) < 0 or int(i) > 255:
                 return
                 
-    if int(ip[0]) == 0:
-        return
+            if len(i) > 1:
+                if int(i[0]) == 0:
+                    return
+                    
+        if int(ip[0]) == 0:
+            return
+            
+        if int(ip[-1]) == 0 or int(ip[-1]) == 255:
+            return
         
-    if int(ip[-1]) == 0 or int(ip[-1]) == 255:
-        return
+        else:
+            return True
     
-    else:
-        return True
+    except ValueError:
+        print(f"{Fore.RED}[-] Error values entered are not integer...!")
+        exit()
