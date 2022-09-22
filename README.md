@@ -33,9 +33,9 @@ python3 port-scanner.py
 ```
 
 ## Usage | Parameters
-```md
+
 Simply enter a **valid IP Address** and press enter.
 **Example => 192.168.1.1**
-```
+
 
 ![POC](https://raw.githubusercontent.com/sudo-Ayush/Port_Scanner_2.0/main/image.PNG)
