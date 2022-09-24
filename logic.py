@@ -99,7 +99,7 @@ def validation(ip):
         
         else:
             return True
-    
-    except ValueError:
-        print(f"{Fore.RED}[-] Error values entered are not integer...!")
+        
+    except (ValueError, socket.gaierror):
+        print(f"{Fore.RED}[-] Error : Invalid domain or IP...!")
         exit()
