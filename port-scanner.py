@@ -84,5 +84,5 @@ except socket.gaierror:
     exit()
     
 except KeyboardInterrupt:
-    print(f"{Fore.RED}[-] You press [Ctrl + C]\nExiting...")
+    print(f"{Fore.RED}[-] You pressed [Ctrl + C]\nExiting...")
     exit()
